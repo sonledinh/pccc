@@ -1,0 +1,191 @@
+@media (max-width: 1023px) and (min-width: 768px) {
+    .item-prd .avarta img {
+        height: 100px;
+    }
+
+    .list-cate-bar a {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .item-srv .info {
+        padding: 10px;
+    }
+
+    .item-srv a {
+        font-size: 16px;
+    }
+
+    .item-srv .avarta img {
+        height: 250px;
+    }
+
+    .item-why .info h3 {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .item-prj .avarta img {
+        height: 300px;
+    }
+
+    .item-prj .info {
+        padding: 10px;
+    }
+
+    .item-prj .info h3 a {
+        font-size: 16px;
+        display: block;
+    }
+
+    .item-new .avarta img {
+        height: 152px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-mobile {
+        display: block !important;
+    }
+    .mobile-top {
+        background: #ff0101;
+        padding: 5px 0;
+    }
+
+    header .hotline {
+        text-align: center;
+    }
+
+    .menu-bott .logo img {
+        height: 55px;
+    }
+
+    .btn-menu a {
+        font-size: 22px;
+        color: #ff0101;
+    }
+
+    .menu-bott {
+        padding: 5px 0;
+        background: #fff;
+        box-shadow: 0px 3px 16px #aaa;
+    }
+    nav#menu {
+        z-index: 1001;
+        display: none;
+    }
+
+    nav#menu.mm-menu_opened {
+        display: block;
+    }
+    li.mm-listitem a {
+        text-transform: uppercase;
+    }
+    .footer-top {
+        padding: 25px 0;
+    }
+
+    .footer-top .title-ft {
+        margin-bottom: 15px;
+    }
+
+    .footer-top .col-md-4 {
+        padding: 25px 15px;
+    }
+    .header-menu {
+        display: none;
+    }
+    .reserved {padding: 5px 10px;font-size: 12px;}
+
+    .info-caption h3 {
+        font-size: 20px;
+    }
+
+    .info-caption h2 {
+        padding: 15px 0;
+        font-size: 30px;
+    }
+
+    .slide-banner .item .avarta img {
+        height: 70vh;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .list-cate-bar a {
+        padding: 10px;
+    }
+
+    .list-cate-bar a:after {
+        display: none;
+    }
+
+    .content-prd .col-md-3 {
+        order: 2;
+    }
+
+    .content-prd .col-md-9 {
+        order: 1;
+    }
+
+    .list-prd .col-md-3 {
+        order: unset;
+    }
+
+    .item-prd .avarta img {
+        height: 125px;
+    }
+
+    .list-cate-bar {
+        margin-top: 25px;
+    }
+
+    .box-qc {
+        display: none;
+    }
+
+    .item-new .avarta img {
+        height: 250px;
+    }
+
+    .list-news .col-md-4 {margin-bottom: 15px;}
+
+    .box-form .list-txt {
+        padding-right: 0;
+    }
+
+    .box-form .btn-submit {
+        position: unset;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .regis-price {
+        margin-bottom: 30px;
+    }
+
+    .item-srv a {
+        font-size: 18px;
+    }
+
+    .item-srv .info {
+        padding: 10px;
+    }
+
+    .btn-more {
+        margin-top: 15px;
+    }
+
+    .pj-left {
+        margin-bottom: 30px;
+    }
+    .item-prj .info {
+        transform: scale(1);
+    }
+
+}
