@@ -317,6 +317,38 @@ footer {
   padding-top: 15px;
   border-top: 0.5px solid #fff;
 }
+.head-menu li {
+  position: relative;
+}
+.head-menu li ul {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0px 2px 7px #aaa;
+  z-index: 10;
+  width: 250px;
+  display: block;
+  padding: 10px 15px;
+  transition: 0.3s all !important;
+  left: 20px;
+  top: 44px;
+  pointer-events: none;
+  opacity: 0;
+}
+.head-menu li ul li {
+  margin-bottom: 6px;
+}
+.head-menu li ul li:last-child {
+  margin-bottom: 0;
+}
+.head-menu li ul li a {
+  color: #000000;
+}
+.head-menu li:hover ul {
+  top: 24px;
+  opacity: 1;
+  left: 0;
+  pointer-events: unset;
+}
 
 header .hotline {
   font-size: 14px;
@@ -355,11 +387,14 @@ header .hotline a {
 .slide-banner {
   position: relative;
 }
+.slide-banner.slide-home .item .avarta img {
+  height: 90vh;
+}
 .slide-banner .item {
   position: relative;
 }
 .slide-banner .item .avarta img {
-  height: 90vh;
+  height: 50vh;
   object-fit: cover;
 }
 .slide-banner .caption {
@@ -704,6 +739,332 @@ header .hotline a {
 .btn-more a:hover {
   background: #fff;
   color: #ff0101;
+}
+
+.contact {
+  padding-top: 60px;
+}
+
+.txt-ctn h1 {
+  font-size: 22px;
+  color: #00adef;
+  margin-bottom: 5px;
+}
+.txt-ctn h2 {
+  font-size: 22px;
+  color: #fb1601;
+}
+.txt-ctn ul {
+  padding-top: 15px;
+  list-style: none;
+}
+.txt-ctn ul li {
+  margin-bottom: 5px;
+}
+.txt-ctn ul li:last-child {
+  margin-bottom: 0;
+}
+
+.form-ct {
+  font-size: 14px;
+}
+.form-ct .row {
+  margin: 0 -7px;
+}
+.form-ct .row .col-md-6 {
+  padding: 0 7px;
+  margin-bottom: 15px;
+}
+.form-ct .row .col-md-12 {
+  padding: 0 7px;
+  margin-bottom: 15px;
+}
+.form-ct .inp_txt {
+  width: 100%;
+  padding: 0 15px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.form-ct textarea {
+  width: 100%;
+  padding: 10px 15px;
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.btn-contact {
+  height: 35px;
+  cursor: pointer;
+  padding: 0 15px;
+  background: #fb1601;
+  border: 0;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.btn-contact:hover {
+  background: #01aeef;
+}
+
+.news {
+  padding-top: 60px;
+}
+.news .col-md-6 {
+  margin-bottom: 30px;
+}
+
+.item-news {
+  display: flex;
+}
+.item-news .avarta {
+  flex: 0 0 211px;
+  margin-right: 20px;
+}
+.item-news .avarta img {
+  height: 158px;
+  object-fit: cover;
+}
+.item-news .info a {
+  display: block;
+  font-size: 16px;
+}
+.item-news .info .date {
+  color: #6c75a7;
+  font-size: 14px;
+  padding: 8px 0;
+}
+.item-news .info .desc {
+  font-size: 14px;
+}
+
+.detail p {
+  margin-bottom: 15px;
+}
+.detail p:last-child {
+  margin-bottom: 0;
+}
+.detail img {
+  max-width: 100%;
+}
+
+.detail-title {
+  margin-bottom: 20px;
+}
+.detail-title h1 {
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  color: #ed1b26;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.detail-title h1:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ed1b26;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1px);
+}
+.detail-title h1 span {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding: 0 20px;
+}
+.detail-title .date {
+  color: #999999;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.detail-title .date i {
+  margin-right: 10px;
+}
+
+.other-detail {
+  margin-top: 30px;
+  background: rgba(128, 128, 128, 0.15);
+  padding: 30px;
+  border-radius: 5px;
+}
+.other-detail h6 {
+  margin-bottom: 15px;
+}
+.other-detail ul {
+  list-style: none;
+  font-size: 14px;
+}
+.other-detail ul li {
+  margin-bottom: 6px;
+}
+.other-detail ul li:last-child {
+  margin-bottom: 0;
+}
+.other-detail a {
+  position: relative;
+  padding-left: 20px;
+}
+.other-detail a:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #000000;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.service {
+  padding-top: 60px;
+}
+
+.list-service .row {
+  margin: 0;
+}
+.list-service .row .col-md-3 {
+  padding: 0;
+}
+
+.item-service {
+  position: relative;
+}
+.item-service .info-srv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  background: #00000073;
+  color: #fff;
+  transform: scale(0);
+  transition: 0.4s all !important;
+}
+.item-service .info-srv a {
+  color: #fff;
+}
+.item-service .info-srv h3 a {
+  font-size: 20px;
+  display: block;
+  line-height: 1.4;
+}
+.item-service .info-srv .desc {
+  padding: 10px 0;
+}
+.item-service:hover .info-srv {
+  transform: scale(1);
+}
+.item-service .view-srv a {
+  display: inline-flex;
+  height: 35px;
+  align-items: center;
+  background: #ff0101;
+  padding: 0 15px;
+  border-radius: 5px;
+  border: 1px solid #ff0101;
+  color: #fff;
+}
+.item-service .view-srv a:hover {
+  color: #ff0101;
+  background: #fff;
+}
+
+.avarta-review {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.share-prd {
+  padding: 20px 0;
+}
+.share-prd li {
+  margin-right: 0 !important;
+}
+
+.info-preview h1 {
+  font-size: 20px;
+  color: #ff0101;
+}
+.info-preview ul {
+  list-style: none;
+}
+.info-preview ul li {
+  margin-bottom: 5px;
+}
+.info-preview ul li:last-child {
+  margin-bottom: 0;
+}
+
+.tab-preview {
+  margin-top: 30px;
+}
+.tab-preview .top {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.tab-preview .top ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.tab-preview .top ul li {
+  margin-right: 10px;
+}
+.tab-preview .top ul li:last-child {
+  margin-right: 0;
+}
+.tab-preview .top a {
+  display: inline-flex;
+  height: 31px;
+  background: #eee;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.tab-preview .top a.active, .tab-preview .top a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.tab-preview-content .tab-content {
+  display: none;
+}
+.tab-preview-content .tab-content.active {
+  display: block;
+}
+.tab-preview-content h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.tab-preview-content ul {
+  list-style: none;
+}
+.tab-preview-content ul li {
+  margin-bottom: 6px;
+}
+.tab-preview-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+.other-prd {
+  margin-top: 40px;
+}
+.other-prd .item-prd .avarta img {
+  height: 225px;
 }
 
 /*# sourceMappingURL=style.css.map */

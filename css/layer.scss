@@ -116,6 +116,40 @@ footer {
 	margin-top: 15px;
     padding-top: 15px;
     border-top: .5px solid #fff;
+    li {
+        position: relative;
+        ul {
+            position: absolute;
+            background: #fff;
+            box-shadow: 0px 2px 7px #aaa;
+            z-index: 10;
+            width: 250px;
+            display: block;
+            padding: 10px 15px;
+            transition: .3s all !important;
+            left: 20px;
+            top: 44px;
+            pointer-events: none;
+            opacity: 0;
+            li {
+                margin-bottom: 6px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    color: #000000;
+                }
+            }
+        }
+        &:hover {
+            ul {
+                top: 24px;
+                opacity: 1;
+                left: 0;
+                pointer-events: unset;
+            }
+        }
+    }
 }
 header {
 	.hotline {

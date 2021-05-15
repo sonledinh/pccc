@@ -89,6 +89,20 @@ $('.slide-prj').slick({
     ],
 });  
 
+$(document).ready(function(){
+    
+    $('.tab-preview .top a').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('.tab-preview .top a').removeClass('active');
+        $('.tab-content').removeClass('active');
+
+        $(this).addClass('active');
+        $("#"+tab_id).addClass('active');
+    })
+
+})
+
 jQuery(document).ready(function( $ ) {
   $("#menu").mmenu({
      "extensions": [
